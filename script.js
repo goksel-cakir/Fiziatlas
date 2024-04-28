@@ -177,25 +177,24 @@ function mode_select(mode) {
 
 
 function caseMode() {
-    // Clear previous timer
     clearInterval(timer);
     document.getElementById("progressBar").style.display = "block";
     document.getElementById("correctnessMessage").textContent = "";
 
-    // Start timer for the current question
-    let timeLeft = 20; // 20 seconds per question
+    // Timer'ı başlat
+    let timeLeft = 20; // Soru başına 20 saniye
     const timerDisplay = document.getElementById("timerDisplay");
     timerDisplay.textContent = `Kalan süre: ${timeLeft} saniye`;
 
     const progressBar = document.getElementById("progressBar");
-    progressBar.style.width = "100%"; // Initially full
+    progressBar.style.width = "100%";
 
 
     timer = setInterval(() => {
         timeLeft -= 0.1 ;
         timerDisplay.textContent = `Kalan süre: ${Math.floor(timeLeft.toFixed(1))} saniye`;
         
-        const progressWidth = (timeLeft / 20) * 100; // Calculate width percentage
+        const progressWidth = (timeLeft / 20) * 100; // Progress bar genişliği
         progressBar.style.width = progressWidth + "%";
 
         
@@ -221,31 +220,31 @@ function caseMode() {
         `;
         quizDiv.innerHTML = questionHtml;
 }
-const POINTS_FOR_CORRECT_ANSWER = 10; // Points awarded for each correct answer
-const PENALTY_FOR_TIME = 1; // Penalty for each second elapsed
+const POINTS_FOR_CORRECT_ANSWER = 10; // Her bir doğru cevap için gelecek puan
+const PENALTY_FOR_TIME = 1; // Saniye başına kesilen ceza(henüz tam ayarlayamadım)
 
 function checkAnswerCase() {
     let userAnswer = document.getElementById("userAnswer").value.trim().toLowerCase();
     let correctAnswer = vakalar[currentQuestionIndex].cevap.toLowerCase();
     let correctnessMessage = "";
 
-    let timeLeft = parseFloat(document.getElementById("timerDisplay").textContent.split(" ")[2]); // Get remaining time
+    let timeLeft = parseFloat(document.getElementById("timerDisplay").textContent.split(" ")[2]); 
 
     if (userAnswer === correctAnswer) {
-        let scoreForAnswer = POINTS_FOR_CORRECT_ANSWER + ((20 - Math.floor(timeLeft)) * PENALTY_FOR_TIME ); // Calculate score for this answer
-        score += scoreForAnswer; // Add score for this answer
+        let scoreForAnswer = POINTS_FOR_CORRECT_ANSWER + ((20 - Math.floor(timeLeft)) * PENALTY_FOR_TIME ); 
+        score += scoreForAnswer; 
         correctnessMessage = "Doğru bildiniz! Puan: " + scoreForAnswer;
     } else {
         correctnessMessage = "Yanlış bildiniz. Doğru cevap: " + correctAnswer;
     }
 
-    // Display the correctness message
+
     document.getElementById("correctnessMessage").textContent = correctnessMessage;
     updateScoreDisplay();
     if (currentQuestionIndex === vakalar.length -1){
         endQuiz();
     }
-    setTimeout(nextQuestionCase, 1000); // Automatically proceed to the next question after 1 second
+    setTimeout(nextQuestionCase, 1000); // Otomatikmen sonraki soruya geç
 }
 
 function nextQuestionCase() {
@@ -253,7 +252,7 @@ function nextQuestionCase() {
     if (currentQuestionIndex < vakalar.length) {
         caseMode();
     } else {
-        endQuiz(); // Call endQuiz when all questions are completed
+        endQuiz();
     }
 }
 
@@ -273,15 +272,15 @@ function classicMode(){
     document.getElementById("progressBar").style.display = "block";
     document.getElementById("correctnessMessage").textContent = "";
     
-    // Start timer for the current question
-    let timeLeft = 20; // 20 seconds per question
+    
+    let timeLeft = 20; // Soru başına 20 saniye
     const timerDisplay = document.getElementById("timerDisplay");
     timerDisplay.textContent = `Kalan süre: ${timeLeft} saniye`;
     timer = setInterval(() => {
         timeLeft -= 0.1 ;
         timerDisplay.textContent = `Kalan süre: ${Math.floor(timeLeft.toFixed(1))} saniye`;
         
-        const progressWidth = (timeLeft / 20) * 100; // Calculate width percentage
+        const progressWidth = (timeLeft / 20) * 100; // Progress bar büyüklüğü hesaplama
         progressBar.style.width = progressWidth + "%";
 
         if (timeLeft <= 0) {
@@ -310,20 +309,20 @@ function checkAnswerClassic() {
     let userAnswer = document.getElementById("userAnswer").value.trim().toLowerCase();
     let correctAnswer = kaslar[currentQuestionIndex].cevap.toLowerCase();
     let correctnessMessage = "";
-    let timeLeft = parseFloat(document.getElementById("timerDisplay").textContent.split(" ")[2]); // Get remaining time
+    let timeLeft = parseFloat(document.getElementById("timerDisplay").textContent.split(" ")[2]); 
 
     if (userAnswer === correctAnswer) {
-        let scoreForAnswer = POINTS_FOR_CORRECT_ANSWER + (Math.floor(timeLeft) * PENALTY_FOR_TIME ); // Calculate score for this answer
-        score += scoreForAnswer; // Add score for this answer
+        let scoreForAnswer = POINTS_FOR_CORRECT_ANSWER + (Math.floor(timeLeft) * PENALTY_FOR_TIME ); 
+        score += scoreForAnswer; 
         correctnessMessage = "Doğru bildiniz! Puan: " + scoreForAnswer;
     } else {
         correctnessMessage = "Yanlış bildiniz. Doğru cevap: " + correctAnswer;
     }
 
-    // Display the correctness message
+ 
     document.getElementById("correctnessMessage").textContent = correctnessMessage;
     updateScoreDisplay();
-    setTimeout(nextQuestionClassic, 1000); // Automatically proceed to the next question after 1 second
+    setTimeout(nextQuestionClassic, 1000); // Otomatikmen sonraki soruya geçiyor
 }
 
 
@@ -332,7 +331,7 @@ function nextQuestionClassic(){
     if (currentQuestionIndex < kaslar.length) {
         classicMode();
     } else {
-        endQuiz(); // Call endQuiz when all questions are completed
+        endQuiz(); 
     }
 }
 
