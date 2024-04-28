@@ -1,0 +1,123 @@
+/* styles.css */
+/*.containerx {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #defffa;
+}*/
+@font-face {
+    font-family: Sitka;
+    src: url(./sitka-font/sitka-small-599.ttf);
+  }
+  
+.container {
+    background-color: #f9f6ee;
+}
+
+h1 {
+    margin-bottom: 200px;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 60px;
+    text-align: center;
+    color: #144061;
+    font-family: Sitka, Arial, Helvetica, sans-serif;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #144061;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: Sitka, Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#timerDisplay {
+    font-family: Sitka, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.image img {
+    max-width: 100%;
+}
+.body-areas, .muscles, .image {
+    width: 30%;
+}
+
+/*.indiv {
+    border: #000 1px solid;
+    margin: 16px;
+    padding: 4px;
+}*/
+
+.btn{
+    font-family: Sitka, Arial, Helvetica, sans-serif;
+    color: #81ce21;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+#header1 {
+    font-family: Sitka, Arial, Helvetica, sans-serif;
+    color: #144061;
+}
+
+#scoreDisplay {
+    font-family: Sitka, Arial, Helvetica, sans-serif;
+    color: #001621;
+}
+#progressBar {
+    display: none;
+    background-color: #73b51a;
+}
+
+.muscle-image {
+    max-width: 400px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+
+}
+.form-section {
+    font-family: Sitka, Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin-top: 10px;
+    margin-left: 400px;
+    margin-bottom: 10px;
+}
+
+#userAnswer {
+    font-family: Sitka, Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    flex: 1;
+}
+.col-9 {
+    font-family: Sitka, Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+
+}
+.just-font {
+    font-family: Sitka, Arial, Helvetica, sans-serif;
+}
+#carouselWithCaptions {
+    max-width: 800px;
+    margin-left: 250px;
+    margin-bottom: 10px;
+
+}
+.carousel-caption {
+    color : #001621;
+}
