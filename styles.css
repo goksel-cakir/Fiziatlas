@@ -80,7 +80,7 @@ button:hover {
 }
 
 .muscle-image {
-    max-width: 400px; /* Adjust the maximum width as needed */
+    max-width: 100%; /* Adjust the maximum width as needed */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 20px;
 
@@ -92,7 +92,6 @@ button:hover {
     justify-content: center;
     max-width: 500px;
     margin-top: 10px;
-    margin-left: 400px;
     margin-bottom: 10px;
 }
 
@@ -112,12 +111,27 @@ button:hover {
 .just-font {
     font-family: Sitka, Arial, Helvetica, sans-serif;
 }
-#carouselWithCaptions {
-    max-width: 800px;
-    margin-left: 250px;
-    margin-bottom: 10px;
+
+
+@media screen and (max-width: 767px) {
+    .form-section {
+        margin-left: 10px; /* Adjust the margin for smaller screens */
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .form-section {
+        margin-left: 100px; /* Adjust the margin for medium-sized screens */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .form-section {
+        margin-left: 400px; /* Adjust the margin for larger screens */
+    }
+    .muscle-image {
+        max-width: 400px;
+    }
 
 }
-.carousel-caption {
-    color : #001621;
-}
+
