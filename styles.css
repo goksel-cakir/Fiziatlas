@@ -75,6 +75,7 @@ button:hover {
     color: #001621;
 }
 #progressBar {
+    max-width: 100%;
     display: none;
     background-color: #73b51a;
 }
