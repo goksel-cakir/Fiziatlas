@@ -15,33 +15,33 @@ const vakalar = [
     {
         vaka: "Vaka 1: Başparmak fleksiyonu hareketini gerçekleştiremeyen hasta",
         soru: "Etkilenen kasın orijini nedir?",
-        cevap: "Radius'un ön yüzü ve membrana interossea",
+        cevap: "Membranus interossea",
     },
     
     {
         vaka: "Vaka 1: Başparmak fleksiyonu hareketini gerçekleştiremeyen hasta",
         soru: "Etkilenen kasın insersiyonu nedir?",
-        cevap: "Baş parmağın distal falanksının basis'inin palmar yüzü"
+        cevap: "Distal falanksın palmar yüzü"
     },
     {
         vaka: "Vaka 2: Kolunu fleksiyona götüremeyen hasta",
         soru: "Hangi kas etkilenmiştir?",
-        cevap: "Coracobrachialis",
+        cevap: "Deltoidin anterior parçası",
     },
     {
         vaka: "Vaka 2: Kolunu fleksiyona götüremeyen hasta",
         soru: "Etkilenen kasın siniri nedir?",
-        cevap: "Musculocutaneous sinir",
+        cevap: "Axillaris",
     },
     {
         vaka: "Vaka 2: Kolunu fleksiyona götüremeyen hasta",
         soru: "Etkilenen kasın orijini nedir?",
-        cevap: "Scapula'nın processus coracoideus",
+        cevap: "Scapula spina, acromion, clavicula",
     },
     {
         vaka: "Vaka 2: Kolunu fleksiyona götüremeyen hasta",
         soru: "Etkilenen kasın insersiyonu nedir?",
-        cevap: "Humerus'un medial yüzünün 1/3 ortası"
+        cevap: "Tuberositas deltoidea"
     },
 
     {
@@ -52,17 +52,17 @@ const vakalar = [
     {
         vaka: "Vaka 3: Kolunu supinasyon pozisyonunda fleksiyona götüremeyen hasta",
         soru: "Etkilenen kasın siniri nedir?",
-        cevap: "Musculocutaneous sinir",
+        cevap: "Musculocutaneous",
     },
     {
         vaka: "Vaka 3: Kolunu supinasyon pozisyonunda fleksiyona götüremeyen hasta",
         soru: "Etkilenen kasın orijini nedir?",
-        cevap: "Caput longum: tuberculum supraglenoidale caput breve: processus coracoideus",
+        cevap: "tuberculum supraglenoidale ",
     },
     {
         vaka: "Vaka 3: Kolunu supinasyon pozisyonunda fleksiyona götüremeyen hasta",
         soru: "Etkilenen kasın insersiyonu nedir?",
-        cevap: "Tuberositas radii, aponeurosis bicipitalis ile fascia antebrachii"
+        cevap: "Tuberositas radii"
     },
 ];
 
@@ -76,22 +76,22 @@ const kaslar = [
     {
         name: "Biceps",
         soru: "Bu kasın innervasyonu nedir?",
-        cevap: "Musculocutaneous sinir"
+        cevap: "Musculocutaneous"
     },
     {
         name: "Biceps",
         soru: "Bu kasın orijini nedir?",
-        cevap: "Caput longum: tuberculum supraglenoidale caput breve: processus coracoideus"
+        cevap: "tuberculum supraglenoidale"
     },
     {
         name: "Biceps",
         soru: "Bu kasın insersiyonu nedir?",
-        cevap: "Tuberositas radii, aponeurosis bicipitalis ile fascia antebrachii"
+        cevap: "Tuberositas radii"
     },
     {
         name: "Biceps",
         soru: "Bu kasın fonksiyonu nedir?",
-        cevap: "Ön kola fleksiyon ve süpinasyon"
+        cevap: "Ön kola fleksiyon ve supinasyon"
     },
     {
         name: "Triceps",
@@ -101,22 +101,22 @@ const kaslar = [
     {
         name: "Triceps",
         soru: "Bu kasın innervasyonu nedir?",
-        cevap: "Radial sinir"
+        cevap: "Radialis"
     },
     {
         name: "Triceps",
         soru: "Bu kasın orijini nedir?",
-        cevap: "Caput longum: scapula'nın tuberculum infraglenoidale'si caput laterale: humerus'un posterior yüzünün 1/2 üst kısmı caput mediale: humerus'un posterior ve medialinin 2/3 distal kısmı"
+        cevap: "tuberculum infraglenoidale"
     },
     {
         name: "Triceps",
         soru: "Bu kasın insersiyonu nedir?",
-        cevap: "Humerus'un posterior ve medialinin 2/3 distal kısmı"
+        cevap: "Olecranon"
     },
     {
         name: "Triceps",
         soru: "Bu kasın fonksiyonu nedir?",
-        cevap: "Ön kola ekstansiyon yaptırır. Uzun başı humerus abduksiyondayken caput humeri'yi fikse eder. Omuz eklemi etrafında kola ekstansiyon ve adduksiyon yaptırır"
+        cevap: "Ön kola ekstansiyon"
     },
 
     {
@@ -127,22 +127,22 @@ const kaslar = [
     {
         name: "Deltoid",
         soru: "Bu kasın innervasyonu nedir?",
-        cevap: "Axillar sinir"
+        cevap: "Axillaris"
     },
     {
         name: "Deltoid",
         soru: "Bu kasın orijini nedir?",
-        cevap: "Clavicula'nın 1/3 laterali,acromion, spina scapulae"
+        cevap: "Scapula spina, acromion, clavicula"
     },
     {
         name: "Deltoid",
         soru: "Bu kasın insersiyonu nedir?",
-        cevap: "Humerus'un tuberositas deltoidea'sı"
+        cevap: "Tuberositas deltoidea"
     },
     {
         name: "Deltoid",
         soru: "Bu kasın fonksiyonu nedir?",
-        cevap: "Pars clavicularis: kola fleksiyon ve iç rotasyon pars acromialis: kola adduksiyon pars spinalis: kola ekstansiyon ve dış rotasyon"
+        cevap: "Kola fleksiyon, abdüksiyon, ekstansiyon"
     }
 ];
 

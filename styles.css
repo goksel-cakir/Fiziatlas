@@ -16,7 +16,7 @@
 
 h1 {
     margin-bottom: 200px;
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
     font-size: 60px;
     text-align: center;
@@ -42,6 +42,7 @@ button:hover {
 #timerDisplay {
     font-family: Sitka, Arial, Helvetica, sans-serif;
     font-size: 40px;
+    max-width: 100%;
     margin-bottom: 5px;
 }
 .image img {
@@ -58,6 +59,7 @@ button:hover {
 }*/
 
 .btn{
+    max-width: 100%;
     font-family: Sitka, Arial, Helvetica, sans-serif;
     color: #81ce21;
     margin-top: 10px;
@@ -105,6 +107,7 @@ button:hover {
     flex: 1;
 }
 .col-9 {
+    max-width: 100%;
     font-family: Sitka, Arial, Helvetica, sans-serif;
     padding-top: 20px;
 
